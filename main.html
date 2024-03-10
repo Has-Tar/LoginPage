@@ -18,7 +18,7 @@
 				<input type="email" placeholder="Email" />
 				<input type="password" placeholder="Password" />
 				<a href="#">Forgot your password?</a>
-				<button>Log In</button>
+				<button id="login-button">Log In</button>
 			</form>
 		</div>
 		<div class="overlay-container">
@@ -29,5 +29,11 @@
 			</div>
 		</div>
 	</div>
+	<script>
+        document.getElementById("login-button").addEventListener("click", function(event) {
+			event.preventDefault();
+            window.location.href = "https://has-tar.github.io/GovSchGen/website";
+        });
+    	</script>
 </body>
 </html>
